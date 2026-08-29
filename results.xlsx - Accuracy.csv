@@ -1,0 +1,17 @@
+Accuracy by model and dataset,,,,,,,
+,,,,,,,
+Model,Protocol,CMJ,MP8,MP50,SYNTH,Rowing,CHB-MIT
+MantisV2,Frozen probe,0.944,0.506,0.629,0.891,0.768,0.745
+Chronos-2,Frozen probe,0.927,0.612,0.704,0.861,0.800,0.820
+TiViT,Frozen probe,0.933,0.561,0.667,0.847,0.770,not run
+MOMENT,Fine-tuned head,0.911,0.472,0.615,0.815,not run,0.8257
+LLM-ABBA,Frozen probe,not run,not run,not run,not run,not run,not run
+,,,,,,,
+"MOMENT used a fine-tuned head, not a frozen probe, so it is not directly comparable.",,,,,,,
+LLM-ABBA results withheld pending a fix to the fABBA encoding.,,,,,,,
+MantisV2 on CHB-MIT used the default probe setting and returned an ill-conditioned matrix warning.,,,,,,,
+,,,,,,,
+MiniRocket,Multivariate (ROCKET),0.944,0.716,0.793,0.88,0.809,0.889
+MultiRocket,Multivariate (ROCKET),0.944,0.647,0.575,0.698,0.784,0.722
+,,,,,,,
+"MiniRocket/MultiRocket rows are classical randomised-kernel baselines, not foundation models, included for comparison. Multivariate variant shown; see ROCKET sheet for single-channel results and feature budgets.",,,,,,,
